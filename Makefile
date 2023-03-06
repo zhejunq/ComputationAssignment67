@@ -3,7 +3,7 @@
 all: FINALPROJECT.html FINALPROJECT.pdf
 
 FINALPROJECT.html: outcome.md ViEWSMapGridCell.png
-	pandoc outcome.md -s --mathjax -f markdown+tex_math_dollars -t html -o FINALPROJECT.html
+	pandoc outcome.md -s --webtex -t html -o FINALPROJECT.html
 
 FINALPROJECT.pdf: outcome.md ViEWSMapGridCell.png
 	pandoc outcome.md -s --mathjax -f markdown+tex_math_dollars -t pdf -o FINALPROJECT.pdf
